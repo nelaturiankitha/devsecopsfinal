@@ -2,8 +2,11 @@ branch-defaults:
   default:
     environment: finalelbdevsecops-env
     group_suffix: null
+  master:
+    environment: try2devdinal-env
+    group_suffix: null
 global:
-  application_name: finalelbdevsecops
+  application_name: finalelbdevsecopstry1
   branch: null
   default_ec2_keyname: null
   default_platform: Python 3.7
@@ -14,5 +17,5 @@ global:
   platform_version: null
   profile: null
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application

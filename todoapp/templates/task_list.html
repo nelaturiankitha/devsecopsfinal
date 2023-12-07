@@ -5,7 +5,7 @@
 <div class="todo-container">
   <div class="todo-search">
     <form action="" method="POST">
-     
+      {% csrf_token %}
       {% comment %} <input type="text" placeholder="Enter Todo" /> {% endcomment %}
       {% csrf_token %}
       {{form.title}}
@@ -40,14 +40,6 @@
       
     {% endfor %}
       
-   
-
-
-
-
-
-   
-
  
   </div>
 </div>

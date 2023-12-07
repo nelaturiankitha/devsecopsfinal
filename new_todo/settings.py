@@ -64,13 +64,14 @@ WSGI_APPLICATION = 'new_todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': '4GFa6F4fFAEGcd*abE4fA42CeCA5ADG2',
-        'HOST': 'roundhouse.proxy.rlwy.net',  
-        'PORT': '53951',       
+        'PASSWORD': '8IPkvMwMKn6PqkJCvXme',
+        'HOST': 'devsecopstry6.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  
+        'PORT': '5432',       
     }
 }
+
 
 
 AUTH_PASSWORD_VALIDATORS = [

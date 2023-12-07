@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1+l(5qzq_1#e$#$k!g*+=6cs7ri@%$iu6u&%$n7g#z0uhgpm!v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*','devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -74,10 +74,23 @@ WSGI_APPLICATION = 'new_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DEFAULT_FILE_STORAGE = 'storages.backends.postgresql.PostgreSQLStorage'
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '4GFa6F4fFAEGcd*abE4fA42CeCA5ADG2',
+        'HOST': 'roundhouse.proxy.rlwy.net',  
+        'PORT': '53951',       
     }
 }
 

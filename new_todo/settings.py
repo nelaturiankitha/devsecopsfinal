@@ -14,6 +14,11 @@ SECRET_KEY = 'django-insecure-1+l(5qzq_1#e$#$k!g*+=6cs7ri@%$iu6u&%$n7g#z0uhgpm!v
 DEBUG = True
 
 ALLOWED_HOSTS = ['*','devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com']
+CSRF_TRUSTED_ORIGINS = ['https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com','http://devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com/']
+CORS_ALLOWED_ORIGINS = [
+    "https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com",
+    # Add other trusted origins as needed
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'todoapp',
+    'todoapp.apps.TodoappConfig',
 ]
 
 MIDDLEWARE = [
@@ -35,10 +40,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com",
-    # Add other trusted origins as needed
-]
+
 
 ROOT_URLCONF = 'new_todo.urls'
 

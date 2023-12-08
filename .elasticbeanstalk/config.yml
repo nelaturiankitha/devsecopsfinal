@@ -2,6 +2,8 @@ branch-defaults:
   default:
     environment: finalelbdevsecops-env
     group_suffix: null
+  master:
+    environment: finalelbdevsecops-env
 global:
   application_name: finalelbdevsecops
   branch: null

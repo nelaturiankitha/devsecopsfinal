@@ -3,10 +3,10 @@ branch-defaults:
     environment: finalelbdevsecops-env
     group_suffix: null
   master:
-    environment: django-project-env
+    environment:  try2devdinal-env
     group_suffix: null
 global:
-  application_name: django-project
+  application_name: finalelbdevsecopstry1
   branch: null
   default_ec2_keyname: null
   default_platform: Python 3.7

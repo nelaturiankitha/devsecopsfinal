@@ -3,10 +3,13 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.7
+      java: corretto17
+      python: 3.11
     commands:
       - pip install --upgrade pip
-      - pip install -r requirements.txt
+      - java --version
+      - pip install -r $CODEBUILD_SRC_DIR/requirements.txt pylint
+      - python --version
 
   pre_build:
     commands:

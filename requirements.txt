@@ -7,3 +7,4 @@ psycopg2-binary==2.8.6
 django-crispy-forms
 whitenoise
 pytz==2023.3.post1
+django-bootstrap4

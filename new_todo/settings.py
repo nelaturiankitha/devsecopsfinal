@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-1+l(5qzq_1#e$#$k!g*+=6cs7ri@%$iu6u&%$n7g#z0uhgpm!v
 DEBUG = True
 
 ALLOWED_HOSTS = ['*','devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com']
-CSRF_TRUSTED_ORIGINS = ['https://7b1f971ea52140d0b8e30096c7d178e9.vfs.cloud9.eu-west-1.amazonaws.com','https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com','http://devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com/']
+CSRF_TRUSTED_ORIGINS = ['https://bc4f1197ac474b4e8d0c21f7f8f1eaa0.vfs.cloud9.eu-west-1.amazonaws.com','https://7b1f971ea52140d0b8e30096c7d178e9.vfs.cloud9.eu-west-1.amazonaws.com','https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com','http://devsecopstry1-env.eba-wfqksbgq.us-west-2.elasticbeanstalk.com/']
 CORS_ALLOWED_ORIGINS = [
     "https://bb8fd27cd5cf49d5a4effe26123fc50b.vfs.cloud9.eu-west-1.amazonaws.com",
     # Add other trusted origins as needed

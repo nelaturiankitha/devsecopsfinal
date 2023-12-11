@@ -6,3 +6,4 @@ Pillow
 psycopg2-binary
 django-crispy-forms
 whitenoise
+pytz==2023.3.post1

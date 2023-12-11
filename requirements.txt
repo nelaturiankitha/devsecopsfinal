@@ -5,3 +5,4 @@ gunicorn
 Pillow
 psycopg2-binary
 django-crispy-forms
+whitenoise
